@@ -1,0 +1,17 @@
+[users]
+default-home = /home/%D/%U
+default-shell = /bin/bash
+
+[active-directory]
+default-client = sssd
+os-name = Ubuntu Bionic Beaver
+os-version = 18.04 Minimal
+
+[service]
+automatic-install = no
+
+[{{ domainfqdn }}]
+fully-qualified-names = yes
+automatic-id-mapping = yes
+user-principal = yes
+manage-system = yes
